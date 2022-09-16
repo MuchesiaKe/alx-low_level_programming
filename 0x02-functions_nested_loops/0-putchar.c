@@ -1,29 +1,17 @@
 #include "main.h"
 
 /**
- *prints - Prints _putchar followed by a new line
- *Return:
-#include "main.h"
-/**
- * main - prints _putchar, followed by a new line
- *
- * Return: Always 0 (Success)
+*putschar- Prints _putchar followed by a new line
 */
-int main(void)
-{
-	char oli[] = "_putchar";
-	int c;
 
-	for (c = 0; c < 8; c++)
+void putschar(void)
+{
+	char strng[] = "_putchar";
+	long unsigned int i;
+
+	for (i = 0; i < sizeof(strng); i++)
 	{
-		_putchar(oli[c]);
+		_putchar(strng[i]);
 	}
 	_putchar('\n');
-	return (0);
-} Retruns 0
- */
-
-int prints(void)
-{
-	_putchar("_putchar\n");
 }
