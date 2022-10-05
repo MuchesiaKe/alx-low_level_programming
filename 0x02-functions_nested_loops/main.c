@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 *main- entrypoint for the program
@@ -8,6 +9,6 @@
 
 int  main(void)
 {
-	putschar();
+	print_to_98(0);
 	return (0);
 }

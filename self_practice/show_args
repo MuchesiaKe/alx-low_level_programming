@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+/*
+*main- illustrate argc and argv
+*@argc : number of arguements
+*argv : list of arguements
+*Return: Always 0
+*/
+
+int main(int argc, char **argv)
+{
+	while(argc--)
+		printf("%s\n", *arg++);
+	exit(EXIT_SUCCESS);
+}
