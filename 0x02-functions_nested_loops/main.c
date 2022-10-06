@@ -9,6 +9,6 @@
 
 int  main(void)
 {
-	print_to_98(0);
+	putschar();
 	return (0);
 }
