@@ -49,3 +49,15 @@ Write a function that prints the sign of a number.
     Returns 0 and prints 0 if n is zero
     Returns -1 and prints - if n is less than zero
 
+
+9-times_table.c
+Write a function that prints the 9 times table, starting with 0.
+
+    Prototype: void times_table(void);
+
+
+10-add.c
+Write a function that adds two integers and returns the result.
+
+    Prototype: int add(int, int);
+
