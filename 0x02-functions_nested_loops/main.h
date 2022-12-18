@@ -17,4 +17,5 @@
 	void natural_sum(void);
 	void fibonacci_50(void);
 	void fibonacci_even(void);
+	void fibonacci_98(void);
 #endif

@@ -10,12 +10,12 @@ void fibonacci_even(void)
 
 	for (i = 0; i <= 4000000; i += 2)
 	{
+		if (fib >= 4000000
+			break;
 		fib = a + b;
 		printf("%d, ", fib);
 		a = b;
 		b = fib;
-		if (fib >= 4000000)
-			break;
 	}
 	printf("\n");
 }
