@@ -7,7 +7,7 @@
 
 void fib_4m(void)
 {
-	unsigned long a, b, fib;
+	int a, b, fib;
 
 	a = fib = 0;
 	b = 1;
@@ -16,7 +16,7 @@ void fib_4m(void)
 	{
 		fib = a + b;
 		if (fib % 2 == 0)
-			printf("%lu, ", fib);
+			printf("%d, ", fib);
 		a = b;
 		b = fib;
 	}
