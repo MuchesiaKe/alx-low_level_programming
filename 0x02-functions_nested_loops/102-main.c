@@ -7,6 +7,6 @@
 
 int main(void)
 {
-	fib-50();
+	fib_50();
 	return (0);
 }

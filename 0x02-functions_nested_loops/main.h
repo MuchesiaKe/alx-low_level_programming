@@ -12,5 +12,5 @@
 	void print_to_98(int n);
 	void print_times_table(int n);
 	void multiples_sum(void);
-	void fib-50(void);
+	void fib_50(void);
 #endif

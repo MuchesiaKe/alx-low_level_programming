@@ -1,10 +1,11 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-*fib-50 : prints the first 50 fibonacci numbers
+*fib_50 : prints the first 50 fibonacci numbers
 **/
 
-void fib-50(void)
+void fib_50(void)
 {
 	int counter;
 	unsigned long a, b, fib;
@@ -15,7 +16,10 @@ void fib-50(void)
 	while (counter < 50)
 	{
 		fib = a + b;
-		printf("%d, ", 	fib);
+		if (counter == 49)
+			printf("%lu\n", fib);
+		else
+			printf("%lu, ",	fib);
 		a = b;
 		b = fib;
 		counter++;
