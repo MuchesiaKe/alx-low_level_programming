@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-*fib_50 : prints the first 50 fibonacci numbers
+*fib_50 - prints the first 50 fibonacci numbers
 **/
 
 void fib_50(void)
