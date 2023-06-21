@@ -13,4 +13,5 @@
 	void print_times_table(int n);
 	void multiples_sum(void);
 	void fib_50(void);
+	void fib_4m(void);
 #endif
