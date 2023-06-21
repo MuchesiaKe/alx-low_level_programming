@@ -14,4 +14,5 @@
 	void multiples_sum(void);
 	void fib_50(void);
 	void fib_4m(void);
+	void fib_98(void);
 #endif
