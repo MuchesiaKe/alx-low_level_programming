@@ -4,8 +4,8 @@
 #include "main.h"
 
 /**
-*main - program entrypoint
-*Return: Always (0)
+*positive_or_negative - checks if number is positive or negative
+*@n : integer to be checked
 **/
 void positive_or_negative(int n)
 {
