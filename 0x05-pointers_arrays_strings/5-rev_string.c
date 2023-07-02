@@ -5,10 +5,13 @@
 
 void rev_string(char *s)
 {
-	int i, j;
+	int i, j, size;
 	char temp;
 
-	for (i = 0, j = sizeof(s); i < j; i++, j--)
+	size = 0;
+	for (i = 0; s[i] != '\0'; i++ )
+		size++;
+	for (i = 0, j = size - 1; i < j; i++, j--)
 	{
 		temp = s[i];
 		s[i] = s[j];
