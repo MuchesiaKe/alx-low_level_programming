@@ -10,16 +10,17 @@ char *cap_string(char *str)
 {
 	int i, j, size;
 	char sep[] = {' ', '\t', '\n', ',', ';', '.',
-	 '!', '?', '"', '(', '(', '{', '}'};
+	 '!', '?', '"', '(', ')', '{', '}'};
 
-	size = sizeof(sep) / sizeof(char);
+	size = sizeof(sep);
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; j < size; j++)
 		{
 			if (str[i] == sep[j])
 			{
-				str[++i] = str[++i] - 32;
+				i++;
+				str[++i] -= 32;
 			}
 		}
 	}
