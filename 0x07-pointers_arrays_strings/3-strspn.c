@@ -13,11 +13,10 @@ unsigned int _strspn(char *s, char *accept)
 	int i, j;
 
 	count = i = j = 0;
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (*accept)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			j++;
 			printf("%c %c\n", s[i], accept[j]);
 			if (s[i] == accept[j])
 			{
@@ -25,7 +24,6 @@ unsigned int _strspn(char *s, char *accept)
 				continue;
 			}
 		}
-		i++;
 	}
 	return (count);
 }
