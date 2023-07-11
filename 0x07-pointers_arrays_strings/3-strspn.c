@@ -24,6 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 				continue;
 			}
 		}
+		printf("Not found!\n");
 	}
 	return (count);
 }
