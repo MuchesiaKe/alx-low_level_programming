@@ -13,9 +13,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *arr_mem;
 
 	arr_mem = malloc(nmemb * size);
-	if (arr_mem == NULL)
+	if (arr_mem == NULL || size == 0)
 		return (NULL);
 	for (i = 0; i < nmemb; i++)
 		arr_mem[i] = '\0';
-	return (arr_mem);
+	return ((void*)arr_mem);
 }
