@@ -18,7 +18,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == 0)
 		return (NULL);
 	new_mem = malloc(new_size);
-	for (i = 0; ((char*)ptr)[i] != '\0'; i++)
+	for (i = 0; ((char *)ptr)[i] != '\0'; i++)
 		new_mem[i] = ((char *)ptr)[i];
 	new_mem[i] = '\0';
 	return (new_mem);
