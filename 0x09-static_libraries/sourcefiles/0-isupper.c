@@ -2,5 +2,5 @@
 
 int _isupper(int c)
 {
-	return (1)
+	return (c);
 }
