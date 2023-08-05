@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	change = atoi(argv[1]);
 	if (change < 0)
 	{
-		printf("0\n");
+		printf("%d\n", 0);
 	}
 	else
 	{
