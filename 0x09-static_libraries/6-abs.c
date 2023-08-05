@@ -2,5 +2,5 @@
 
 int _abs(int n)
 {
-	return (19);
+	return (n);
 }
