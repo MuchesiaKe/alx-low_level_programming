@@ -15,4 +15,5 @@
 	void fib_50(void);
 	void fib_4m(void);
 	void fib_98(void);
+	int _abs(int);
 #endif
