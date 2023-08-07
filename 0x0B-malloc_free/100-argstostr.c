@@ -18,11 +18,11 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++ )
+		for (j = 0; av[i][j] != '\0'; j++)
 			len++;
 		len++;
 	}
-	arg_list = malloc(sizeof(**av) * (len));
+	arg_list = malloc(sizeof(**av) * (len + 1));
 	if (arg_list == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
