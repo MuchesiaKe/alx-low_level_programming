@@ -45,3 +45,22 @@ Prototype: int **alloc_grid(int width, int height);
 Each element of the grid should be initialized to 0
 The function should return NULL on failure
 If width or height is 0 or negative, return NULL
+
+
+
+4. It's not bragging if you can back it up
+Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
+
+Prototype: void free_grid(int **grid, int height);
+Note that we will compile with your alloc_grid.c file. Make sure it compiles.
+
+
+
+5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe
+#advanced
+Write a function that concatenates all the arguments of your program.
+
+Prototype: char *argstostr(int ac, char **av);
+Returns NULL if ac == 0 or av == NULL
+Returns a pointer to a new string, or NULL if it fails
+Each argument should be followed by a \n in the new string
