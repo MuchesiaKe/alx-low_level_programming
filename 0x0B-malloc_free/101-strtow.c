@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 *strtow - splits a string into words
@@ -20,10 +21,12 @@ char **strtow(char *str)
 	{
 		while (*str_ref != ' ' || *str_ref != '\t' || *str_ref != '\n')
 		{
+			printf("char: %c  size:%d\n", *str_ref, size);
 			size++;
 			str_ref++;
 			if (*str_ref == ' ' || *str_ref == '\t' || *str_ref ==  '\n')
 			{
+				len++;
 				break;
 			}
 		}
@@ -33,11 +36,12 @@ char **strtow(char *str)
 			str_ref++;
 			if (*str_ref != ' ' || *str_ref != '\t' || *str_ref != '\n')
 			{
-				len++;
 				break;
 			}
 		}
+		printf("Len: %d\n", len);
 	}
+	printf("Do we ever get here");
 
 	for (i = 0; i < len; i++)
 	{
