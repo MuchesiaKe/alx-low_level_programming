@@ -20,11 +20,11 @@ int (*get_op_func(char *s))(int a, int b)
 	int i;
 
 	i = 0;
-	printf("%s\n", ops[i][1]);
-	while (ops[i++])
+	while (ops[i].op)
 	{
-		if (*s == ops[i][1])
-			return (ops[i][2](a, b));
+		if (*s == *(ops[i].op))
+			return ops[i].f;
+		i++;
 	}
 	printf("Error\n");
 	return (99);
