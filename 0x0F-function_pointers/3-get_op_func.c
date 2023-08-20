@@ -2,8 +2,7 @@
 
 /**
 *get_op_func - selects correct function to perform operation
-*@a: first operand
-*@b: second operand
+*@s: pointer to function for the operation
 *Return: pointer to function to perform operation
 **/
 
@@ -23,9 +22,9 @@ int (*get_op_func(char *s))(int a, int b)
 	while (ops[i].op)
 	{
 		if (*s == *(ops[i].op))
-			return ops[i].f;
+			return (ops[i].f);
 		i++;
 	}
 	printf("Error\n");
-	return (99);
+	exit(99);
 }
