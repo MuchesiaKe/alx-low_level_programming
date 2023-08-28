@@ -1,3 +1,11 @@
+  op_t ops[] = {
+     12         {"+", op_add},
+     13         {"-", op_sub},
+     14         {"*", op_mul},
+     15         {"/", op_div},
+     16         {"%", op_mod},
+     17         {NULL, NULL}
+     18         };
 #include "3-calc.h"
 
 /**
