@@ -19,25 +19,20 @@ char **strtow(char *str)
 
 	while (*str_ref)
 	{
-		while (*str_ref != ' ' || *str_ref != '\t' || *str_ref != '\n')
+		if ((*str_ref) && (*str_ref != ' ' || *str_ref != '\t' || *str_ref != '\n'))
+		{
+			len++;
+		while ((*str_ref) && (*str_ref != ' ' || *str_ref != '\t' || *str_ref != '\n'))
 		{
 			printf("char: %c  size:%d\n", *str_ref, size);
 			size++;
 			str_ref++;
-			if (*str_ref == ' ' || *str_ref == '\t' || *str_ref ==  '\n')
-			{
-				len++;
-				break;
-			}
+		}
 		}
 
-		while (*str_ref == ' ' || *str_ref == '\t' || *str_ref == '\n')
+		while ((*str_ref) && (*str_ref == ' ' || *str_ref == '\t' || *str_ref == '\n'))
 		{
 			str_ref++;
-			if (*str_ref != ' ' || *str_ref != '\t' || *str_ref != '\n')
-			{
-				break;
-			}
 		}
 		printf("Len: %d\n", len);
 	}
